@@ -91,7 +91,7 @@ public class UserController {
 		System.out.println(UserEntity.get().getRoles());
 		System.out.println(x);
 		System.out.println(z);
-		if (x == z) {
+		if (x.equals(z)) {
 			System.out.println("testif");
 			param.setOrgId(id);
 			repoOrg.save(param);
@@ -116,7 +116,7 @@ public class UserController {
 		System.out.println(UserEntity.get().getRoles());
 		System.out.println(x);
 		System.out.println(z);
-		if (x == z) {
+		if (x.equals(z)) {
 			System.out.println("testif");
 			repoOrg.deleteById(id);
 			a = "Berhasil Melakukan Penghapusan";
